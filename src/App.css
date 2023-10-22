@@ -20,8 +20,8 @@
   display: flex;
   justify-content: center;
   padding-top: 25px;
+  padding-bottom: 10px;
 }
-/* Upload File CSS */
 
 form {
   justify-content: center;
@@ -38,7 +38,6 @@ form {
   font-style: 24px;
 }
 label:hover {
-  /* background: blue; */
   color: red;
 }
 
@@ -60,26 +59,32 @@ label:hover {
   margin-top: 20px;
   color: blue;
 }
+
 .img-grid {
-  margin: 20px auto;
+  margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 40px;
+  /* margin-left: 45px; */
+  justify-content: center;
+  align-items: center;
 }
 .img-wrap {
   overflow: hidden;
-  height: 0;
-  padding: 50% 0;
+  height: 50%;
+  padding: 50%;
   position: relative;
-  /* opacity: 0.8; */
 }
 .img-wrap img {
-  min-width: 50%;
-  min-height: 50%;
   max-height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 25px;
+  gap: -10px;
 }
 
 .backdrop {
@@ -101,52 +106,33 @@ label:hover {
   box-shadow: 3px 5px 7px rgb(0, 0, 0, 0.5);
   border: 3px solid white;
 }
-
-/* .progress-bar-container {
-  width: 100%;
-  height: 20px;
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  overflow: hidden;
-} */
-/* .progress-bar {
-  height: 100%;
-  background-color: #4caf50; /* Green background color */
-  /* text-align: center;
-  line-height: 20px;
-  color: #fff; Text color */
-/* } */ */
-/* 
-.progress-bar span {
-  position: absolute;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  color: #000;
-} */
-/* CSS for ProgressBar component */
 .progress-bar-container {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
   height: 20px;
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  border-radius: 4px;
   overflow: hidden;
 }
 
 .progress-bar {
-  height: 100%;
-  background-color: #007BFF; /* Blue background color */
+  height: 200%;
+  display: flex;
   text-align: center;
-  line-height: 20px;
-  color: #fff; /* Text color */
+  align-items: center;
+  background-color: green;
+  color: #fff;
+  font-weight: bold;
+  position: fixed;
+  margin-bottom: 25px;
+  margin-left: 25px;
 }
 
 .progress-bar span {
   position: absolute;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  color: #000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 145 px;
 }

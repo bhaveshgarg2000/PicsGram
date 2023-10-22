@@ -7,10 +7,10 @@ const Title = () => {
             <div className="container ">
                 <div className="row">
                     <div className="col-md-12 col-sm-12 pic">
-                        Your Pictures
+                        Discover Your Moments
                     </div>
                     <div className="col-md-12 col-sm-12 lorem">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                        Capturing Memories that Last a Lifetime
                     </div>
                 </div>
             </div>

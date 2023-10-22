@@ -39,11 +39,9 @@ const ProgressBar = ({ file, setFile }) => {
 
     return (
         <div className="progress-bar-container">
-            <motion.div
-                className="progress-bar"
+            <motion.div className="progress-bar"
                 initial={{ width: 0 }}
-                animate={{ width: `${progress}%` }}
-            >
+                animate={{ width: `${progress}%` }}>
                 {progress > 0 && <span>{progress}%</span>}
             </motion.div>
         </div>

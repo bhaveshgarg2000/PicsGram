@@ -16,7 +16,8 @@ const ImgGrid = ({ setSelectedImg }) => {
                     <div className="img-grid">
                         {docs && docs.map((docs) => (
                             <motion.div
-                                layout transition={{ duration: 1 }} style={{ borderRadius: "15px "}}
+                                layout transition={{ duration: 1 }} 
+                                style={{ borderRadius: "15px "}}
                                 key={docs.id} className="img-wrap" onClick={() => {
                                     setSelectedImg(docs.Url)
                                 }}
