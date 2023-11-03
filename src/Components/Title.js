@@ -6,7 +6,7 @@ const Title = () => {
         <>
             <div className="container ">
                 <div className="row">
-                    <div className="col-md-12 col-sm-12 pic">
+                    <div className="col-md-12 col-sm-12 pic text-center">
                         Discover Your Moments
                     </div>
                     <div className="col-md-12 col-sm-12 lorem">
