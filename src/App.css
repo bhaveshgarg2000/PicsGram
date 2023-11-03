@@ -82,7 +82,7 @@ label:hover {
   left: 0;
   height: 300px;
   width: 300px;
-  object-fit: cover;
+  object-fit: fill;
   border-radius: 25px;
   gap: -10px;
 }

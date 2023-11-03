@@ -3,21 +3,18 @@ import useFireStore from '../Hooks/useFireStore'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import { motion } from "framer-motion";
-
-
-
 const ImgGrid = ({ setSelectedImg }) => {
     const { docs } = useFireStore('images')
     // console.log(docs)
     return (
         <Container>
-            <Row>
+            <Row className="mb-4">
                 <div className="col-md-12 col-sm-12">
                     <div className="img-grid">
                         {docs && docs.map((docs) => (
                             <motion.div
-                                layout transition={{ duration: 1 }} 
-                                style={{ borderRadius: "15px "}}
+                                layout transition={{ duration: 1 }}
+                                style={{ borderRadius: "15px " }}
                                 key={docs.id} className="img-wrap" onClick={() => {
                                     setSelectedImg(docs.Url)
                                 }}
