@@ -39,8 +39,8 @@ const Footer = () => {
                     ><FontAwesomeIcon icon={faLinkedin} />
                     </a>
                 </div>
-                <div className="text-center text-dark pb-3 pt-2">
-                    Bhavesh Krishan Garg © 2023 Copyright
+                <div className="text-center text-dark pb-3 pt-2 fs-5">
+                    © 2023 | Bhavesh Krishan Garg
                 </div>
             </div>
         </div>)
